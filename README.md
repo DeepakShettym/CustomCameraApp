@@ -31,24 +31,43 @@ Function	Description
 🧠 Architecture Flow
 
 +------------------------------------------------+
+
 |                  Android App                   |
+
 |  - SurfaceView (Preview)                       |
+
 |  - Buttons: Open, Start, Stop, Capture, Close  |
+
 +---------------------+--------------------------+
+
                       |
+                      
                       v
+
 +------------------------------------------------+
+
 |             Android Framework Layer            |
+
 |  - Camera API (Legacy Java API)                |
+
 |  - MediaStore for saving images                |
+
 +---------------------+--------------------------+
+
                       |
+                      
                       v
+
 +------------------------------------------------+
+
 |          HAL / Kernel Driver (C++)             |
+
 |  - Custom Camera HAL on ARM-based SoM          |
+
 |  - Communicates with sensor via MIPI-CSI       |
+
 +------------------------------------------------+
+
 
 🛠️ Implementation Steps
 
